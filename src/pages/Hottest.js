@@ -1,7 +1,28 @@
-import * as React from "react";
+import "../App.css";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { MemList } from "../utils";
 
 export default function Hottest() {
+  const [hotMemes, setHotMemes] = useState([]);
+  const memesArr = useSelector((state) => state.memesStore.memes);
+
+  useEffect(() => {
+    setHotMemes([]);
+    checkIsHot();
+  }, [memesArr]);
+
+  const checkIsHot = () => {
+    let hotMemeArr = [];
+    for (let i = 0; i < memesArr.length; i++) {
+      if (memesArr[i].likes - memesArr[i].dislikes >= 5) {
+        hotMemeArr.push(memesArr[i]);
+        setHotMemes(hotMemeArr);
+      }
+    }
+  };
+
   return (
     <>
       <main>
@@ -11,6 +32,14 @@ export default function Hottest() {
       <nav>
         <Link to="/">Go Back to home page</Link>
       </nav>
+
+      <div>
+        {hotMemes.length > 0 ? (
+          <MemList memes={hotMemes} />
+        ) : (
+          <p>There's no hot memes here :(</p>
+        )}
+      </div>
     </>
   );
 }
