@@ -6,27 +6,16 @@ body {
   text-align: center;
 }
 
-.App-logo {
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .logoHeader {
+    animation: logoHeader-spin infinite 20s linear;
   }
 }
 .votesCounter {
   padding-left: 10px;
 }
-.App-header {
-  background-color: black;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pointer {
+  cursor: pointer;
 }
 .mem {
   display: flex;
@@ -37,10 +26,26 @@ body {
 }
 .siteHeader {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  align-items: flex-start;
+  background-color: black;
+  min-height: 10vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.headerText {
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
+.menuList {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
 .memesScore {
   display: flex;
   flex-direction: row;
@@ -53,11 +58,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
+@keyframes logoHeader-spin {
   from {
     transform: rotate(0deg);
   }
