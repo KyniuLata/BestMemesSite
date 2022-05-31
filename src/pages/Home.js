@@ -16,7 +16,7 @@ function Home() {
     <>
       <nav>
         <Link to="/hottest">check the hottest memes here</Link>
-        <Link to="/addMemes">add your own memes here</Link>
+        {/* <Link to="/addMemes">add your own memes here</Link> */}
       </nav>
       <MemList memes={memes} />
     </>
