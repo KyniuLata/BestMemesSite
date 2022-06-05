@@ -10,18 +10,17 @@ export default function Hottest() {
 
   useEffect(() => {
     setHotMemes([]);
+    const checkIsHot = () => {
+      let hotMemeArr = [];
+      for (let i = 0; i < memesArr.length; i++) {
+        if (memesArr[i].likes - memesArr[i].dislikes >= 5) {
+          hotMemeArr.push(memesArr[i]);
+          setHotMemes(hotMemeArr);
+        }
+      }
+    };
     checkIsHot();
   }, [memesArr]);
-
-  const checkIsHot = () => {
-    let hotMemeArr = [];
-    for (let i = 0; i < memesArr.length; i++) {
-      if (memesArr[i].likes - memesArr[i].dislikes >= 5) {
-        hotMemeArr.push(memesArr[i]);
-        setHotMemes(hotMemeArr);
-      }
-    }
-  };
 
   return (
     <>
