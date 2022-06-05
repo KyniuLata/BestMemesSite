@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/best-meme-site/static/css/main.af39a96f.css",
-    "main.js": "/best-meme-site/static/js/main.43efdb77.js",
-    "static/js/787.8710021f.chunk.js": "/best-meme-site/static/js/787.8710021f.chunk.js",
-    "static/media/mem3.png": "/best-meme-site/static/media/mem3.14dcce168b606c4a97c7.png",
-    "static/media/troll.png": "/best-meme-site/static/media/troll.4aa3400aada094bba3ed.png",
-    "static/media/mem1.png": "/best-meme-site/static/media/mem1.e9ed3dd5ae4140862136.png",
-    "static/media/mem2.jpeg": "/best-meme-site/static/media/mem2.650c3268d399d67e233c.jpeg",
-    "static/media/mem4.jpeg": "/best-meme-site/static/media/mem4.3c2d5ebf703d6041692c.jpeg",
-    "index.html": "/best-meme-site/index.html",
-    "main.af39a96f.css.map": "/best-meme-site/static/css/main.af39a96f.css.map",
-    "main.43efdb77.js.map": "/best-meme-site/static/js/main.43efdb77.js.map",
-    "787.8710021f.chunk.js.map": "/best-meme-site/static/js/787.8710021f.chunk.js.map"
+    "main.css": "/best-memes-site/static/css/main.f21633c5.css",
+    "main.js": "/best-memes-site/static/js/main.d46f1016.js",
+    "static/js/787.8710021f.chunk.js": "/best-memes-site/static/js/787.8710021f.chunk.js",
+    "static/media/mem3.png": "/best-memes-site/static/media/mem3.14dcce168b606c4a97c7.png",
+    "static/media/troll.png": "/best-memes-site/static/media/troll.4aa3400aada094bba3ed.png",
+    "static/media/mem1.png": "/best-memes-site/static/media/mem1.e9ed3dd5ae4140862136.png",
+    "static/media/mem2.jpeg": "/best-memes-site/static/media/mem2.650c3268d399d67e233c.jpeg",
+    "static/media/mem4.jpeg": "/best-memes-site/static/media/mem4.3c2d5ebf703d6041692c.jpeg",
+    "index.html": "/best-memes-site/index.html",
+    "main.f21633c5.css.map": "/best-memes-site/static/css/main.f21633c5.css.map",
+    "main.d46f1016.js.map": "/best-memes-site/static/js/main.d46f1016.js.map",
+    "787.8710021f.chunk.js.map": "/best-memes-site/static/js/787.8710021f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af39a96f.css",
-    "static/js/main.43efdb77.js"
+    "static/css/main.f21633c5.css",
+    "static/js/main.d46f1016.js"
   ]
 }
